@@ -1,0 +1,37 @@
+{
+  "name": "useripple",
+  "version": "1.0.0",
+  "description": "A React Hook for adding ripple effect",
+  "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "prepublishOnly": "babel ./src --out-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertkirsz/useripple.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "ripple"
+  ],
+  "author": "Robert Kirsz <robert.kirsz@gmail.com> (https://robertkirsz.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertkirsz/useripple/issues"
+  },
+  "homepage": "https://github.com/robertkirsz/useripple#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-preset-minify": "^0.5.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  }
+}
