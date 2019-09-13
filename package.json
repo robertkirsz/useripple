@@ -1,14 +1,14 @@
 {
   "name": "useripple",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React Hook for adding ripple effect",
+  "author": "Robert Kirsz <robert.kirsz@gmail.com> (https://robertkirsz.com/)",
+  "homepage": "https://github.com/robertkirsz/useripple#readme",
+  "license": "MIT",
   "main": "dist/index.js",
   "files": [
     "dist/*"
   ],
-  "scripts": {
-    "prepublishOnly": "babel ./src --out-dir ./dist"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/robertkirsz/useripple.git"
@@ -18,20 +18,17 @@
     "hooks",
     "ripple"
   ],
-  "author": "Robert Kirsz <robert.kirsz@gmail.com> (https://robertkirsz.com/)",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/robertkirsz/useripple/issues"
   },
-  "homepage": "https://github.com/robertkirsz/useripple#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/preset-react": "^7.0.0",
-    "babel-preset-minify": "^0.5.0"
+  "scripts": {
+    "prepublishOnly": "babel ./src --out-dir ./dist"
   },
-  "peerDependencies": {
-    "react": "^16.8.6"
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-preset-minify": "^0.5.1"
   }
 }
