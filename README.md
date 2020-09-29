@@ -2,7 +2,7 @@
   <img alt="useRipple" src="animation.gif" width="240" />
   <br />
   <br />
-  <a href="https://codesandbox.io/s/useripple-example-zt9ou?autoresize=1&fontsize=14&hidenavigation=1" target="_blank">
+  <a href="https://codesandbox.io/s/useripple-example-zt9ou" target="_blank">
     <img src="https://codesandbox.io/static/img/play-codesandbox.svg">
   </a>
 </div>
