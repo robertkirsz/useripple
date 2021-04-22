@@ -47,7 +47,7 @@ function App() {
 
   // Look how simple it is!
   return (
-    <div onClick={addRipple} style={{ overflow: 'hidden' }}>
+    <div onClick={addRipple} style={{ position: 'relative', overflow: 'hidden' }}>
       {ripples}
       Look at them ripplin'!
     </div>
