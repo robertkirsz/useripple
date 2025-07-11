@@ -1,4 +1,4 @@
-import React, { useState, CSSProperties, MouseEvent } from 'react'
+import React, { useState, useRef, CSSProperties, MouseEvent } from 'react'
 
 const MINIMUM_RIPPLE_SIZE = 100
 
@@ -16,6 +16,7 @@ type UseRippleReturn = [
 
 export default function useRipple(style?: CSSProperties): UseRippleReturn {
   const [ripples, setRipples] = useState<RippleItem[]>([])
+  const rippleCounter = useRef(0)
 
   const showRipple = (event: MouseEvent<HTMLElement>): void => {
     const { left, top } = event.currentTarget.getBoundingClientRect()
@@ -28,7 +29,7 @@ export default function useRipple(style?: CSSProperties): UseRippleReturn {
     )
 
     const newRipple: RippleItem = {
-      key: event.timeStamp,
+      key: rippleCounter.current++,
       style: {
         display: 'block',
         width: rippleSize,
