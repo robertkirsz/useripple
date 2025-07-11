@@ -1,6 +1,6 @@
 {
   "name": "useripple",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A React Hook for adding ripple effect",
   "author": "Robert Kirsz <robert.kirsz@gmail.com> (https://robertkirsz.com/)",
   "homepage": "https://github.com/robertkirsz/useripple#readme",

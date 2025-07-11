@@ -1,4 +1,4 @@
-import React, { useState, useRef, CSSProperties, MouseEvent } from 'react'
+import React, { useState, useRef, type CSSProperties, type MouseEvent } from 'react'
 
 const MINIMUM_RIPPLE_SIZE = 100
 
@@ -22,11 +22,7 @@ export default function useRipple(style?: CSSProperties): UseRippleReturn {
     const { left, top } = event.currentTarget.getBoundingClientRect()
     const x = event.clientX - left
     const y = event.clientY - top
-    const rippleSize = Math.min(
-      event.currentTarget.clientHeight, 
-      event.currentTarget.clientWidth, 
-      MINIMUM_RIPPLE_SIZE
-    )
+    const rippleSize = Math.min(event.currentTarget.clientHeight, event.currentTarget.clientWidth, MINIMUM_RIPPLE_SIZE)
 
     const newRipple: RippleItem = {
       key: rippleCounter.current++,
@@ -43,6 +39,7 @@ export default function useRipple(style?: CSSProperties): UseRippleReturn {
         pointerEvents: 'none',
         animationName: 'useRippleAnimation',
         animationDuration: '0.7s',
+        animationFillMode: 'forwards',
         ...style
       }
     }
